@@ -38,7 +38,7 @@ const MainApp = () => (
     </Helmet>
     {getConfig().ZENDESK_KEY && <Zendesk />}
     <Routes>
-      <Route path="/" element={<Navigate replace to={updatePathWithQueryParams(REGISTER_PAGE)} />} />
+      <Route path="/" element={<Navigate replace to={updatePathWithQueryParams(LOGIN_PAGE)} />} />
       <Route
         path={REGISTER_EMBEDDED_PAGE}
         element={<EmbeddedRegistrationRoute><RegistrationPage /></EmbeddedRegistrationRoute>}
